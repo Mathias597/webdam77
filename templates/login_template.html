@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Ultimate Edition</title>
+
+    <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #000000);
+        background-size: 400% 400%;
+        animation: cosmicBackground 12s ease infinite;
+        color: white;
+    }
+
+    @keyframes cosmicBackground {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    form {
+        background: rgba(0, 0, 0, 0.75);
+        padding: 40px;
+        border-radius: 20px;
+        backdrop-filter: blur(15px);
+        box-shadow:
+            0 0 20px #8f00ff,
+            0 0 40px #6a00ff,
+            0 0 60px #4b00ff;
+        width: 320px;
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 25px;
+        font-size: 22px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, #ff00cc, #00f0ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+        margin-top: 15px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background: #111;
+        color: white;
+        transition: 0.3s;
+    }
+
+    input:focus {
+        box-shadow: 0 0 10px #00f0ff;
+        transform: scale(1.03);
+    }
+
+    button {
+        margin-top: 25px;
+        width: 100%;
+        padding: 14px;
+        border-radius: 30px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, #ff00cc, #3333ff);
+        color: white;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        transform: scale(1.07);
+        box-shadow: 0 0 20px #ff00cc;
+    }
+    </style>
+</head>
+
+<body>
+
+<form action="home.html">
+    <h1>Login Ultimate</h1>
+
+    <label for="email">Correo / Usuario:</label>
+    <input type="text" id="email" name="login" required>
+
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="passwd" required>
+
+    <button type="submit">Aceptar</button>
+</form>
+
+</body>
+</html>

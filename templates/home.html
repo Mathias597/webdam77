@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Ultimate Edition</title>
+
+    <style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #000000);
+        background-size: 400% 400%;
+        animation: cosmicBackground 12s ease infinite;
+        color: white;
+        min-height: 100vh;
+    }
+
+    @keyframes cosmicBackground {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    header {
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0,0,0,0.4);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 20px #8f00ff;
+    }
+
+    header h1 {
+        margin: 0;
+        background: linear-gradient(90deg, #ff00cc, #00f0ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #00f0ff;
+        text-shadow: 0 0 10px #00f0ff;
+    }
+
+    .container {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .card {
+        background: rgba(0, 0, 0, 0.7);
+        margin: 20px auto;
+        padding: 30px;
+        border-radius: 20px;
+        width: 300px;
+        backdrop-filter: blur(15px);
+        box-shadow:
+            0 0 20px #8f00ff,
+            0 0 40px #6a00ff;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow:
+            0 0 30px #ff00cc,
+            0 0 60px #3333ff;
+    }
+
+    button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        background: linear-gradient(90deg, #ff00cc, #3333ff);
+        color: white;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px #ff00cc;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 12px;
+        opacity: 0.7;
+    }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Ultimate Home</h1>
+    <nav>
+        <a href="home.html">Inicio</a>
+        <a href="#">Perfil</a>
+        <a href="#">Configuración</a>
+        <a href="login.html">Cerrar sesión</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Bienvenido a la Infinity Beyond Reality Platform 🚀</h2>
+
+    <div class="card">
+        <h2>Panel Premium</h2>
+        <p>Accede a funciones legendarias e ilimitadas.</p>
+        <button>Explorar</button>
+    </div>
+
+    <div class="card">
+        <h2>Estadísticas</h2>
+        <p>Visualiza tu poder absoluto y dominio total.</p>
+        <button>Ver más</button>
+    </div>
+
+    <div class="card">
+        <h2>Modo Final Boss</h2>
+        <p>Desbloquea el máximo nivel de autoridad.</p>
+        <button>Activar</button>
+    </div>
+</div>
+
+<footer>
+    © 2026 - Ultimate Supreme Eternal Edition
+</footer>
+
+</body>
+</html>
